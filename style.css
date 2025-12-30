@@ -283,3 +283,56 @@ body, html {
     margin: 0 0 var(--space);
     color: #000;
 }
+
+
+@media (min-width: 1024px){
+    .row1 {  
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: #F4B342;        
+    }
+
+    
+    .row2 {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 60px;
+    }
+
+    .row2 header {
+        grid-column: 1 / -1; /* still full width */
+    }
+}
+
+@media (max-width: 768px) {
+    .row2 {
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+
+    .column {
+        margin-bottom: var(--space);
+    }
+}
+
+@media (max-width: 480px) {
+    .row1 {  
+        display: flex;
+        justify-content: center;
+        text-align: center;        
+    }
+
+    .row2 {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .row2 header img {
+        width: 40%; /* bigger for mobile */
+    }
+
+    .column {
+        padding: calc(var(--space) * 0.8);
+    }
+}
+
