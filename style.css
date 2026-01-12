@@ -57,7 +57,7 @@ body, html {
     letter-spacing: 20px;
 }
 
-/* Column container */
+/* 1番目コンテナ */
 .row1 {  
     display: flex;
     justify-content: center;
@@ -67,7 +67,7 @@ body, html {
 }
 
 
-/* Main column */
+
 .main {   
     flex: 70%;
     padding: 100px;
@@ -196,7 +196,8 @@ body, html {
     background-color: #ff0062;
 }
 
-/* Container for flexboxes */
+/* 2番目コンテナ */
+/* フレックスボックスのコンテナ */
 .row2 {
     display: grid;
     grid-template-columns: repeat(2, 0.5fr);
@@ -211,7 +212,7 @@ body, html {
     text-align: center;
 }
 
-/* Create three equal columns that sits next to each other */
+/* 隣り合う2つの等しい列を作成します */
 .column {
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -226,6 +227,8 @@ body, html {
     color: #000;
 }
 
+
+/* 3番目コンテナ */
 .row3 {  
     display: flex;
     justify-content: center;
@@ -279,7 +282,7 @@ body, html {
     }
 
     .row2 header {
-        grid-column: 1 / -1; /* still full width */
+        grid-column: 1 / -1; 
     }
 }
 
@@ -307,7 +310,7 @@ body, html {
     }
 
     .row2 header img {
-        width: 40%; /* bigger for mobile */
+        width: 40%; /* モバイル表示版 */
     }
 
     .column {
